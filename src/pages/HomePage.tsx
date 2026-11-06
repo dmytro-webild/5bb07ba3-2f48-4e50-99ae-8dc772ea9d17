@@ -1,5 +1,5 @@
 import AboutMediaOverlay from '@/components/sections/about/AboutMediaOverlay';
-import ContactCta from '@/components/sections/contact/ContactCta';
+import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import FeaturesDetailedSteps from '@/components/sections/features/FeaturesDetailedSteps';
 import HeroBrand from '@/components/sections/hero/HeroBrand';
@@ -37,7 +37,7 @@ export default function HomePage() {
           <AboutMediaOverlay
       tag="About Us"
       title="Elevating Phoenix Businesses"
-      description="Owned by Japhia Hill, Phoenix Exclusive Web Build helps local businesses establish a digital presence. We leverage AI technology to deliver fast, optimized, and modern websites that drive local growth."
+      description="Phoenix Exclusive Web Build helps local businesses establish a digital presence. We leverage AI technology to deliver fast, optimized, and modern websites that drive local growth."
       imageSrc="http://img.b2bpic.net/free-photo/empty-ai-tech-agency-workspace-providing-custom-software-development-services_482257-120228.jpg"
       textAnimation="fade-blur"
     />
@@ -236,17 +236,23 @@ export default function HomePage() {
 
   <div id="contact" data-section="contact">
     <SectionErrorBoundary name="contact">
-          <ContactCta
+          <ContactSplitForm
       tag="Get Started"
-      text="Ready to bring your business online? Contact Japhia Hill today."
-      primaryButton={{
-        text: "Email Us",
-        href: "mailto:japhiacool@gmail.com",
+      title="Ready to bring your business online?"
+      description="Send us a message to discuss your custom web build and get started today."
+      inputs={[
+        { name: "name", type: "text", placeholder: "Your Name", required: true },
+        { name: "email", type: "email", placeholder: "Your Email Address", required: true },
+        { name: "phone", type: "tel", placeholder: "Phone Number (Optional)" },
+      ]}
+      textarea={{
+        name: "message",
+        placeholder: "Tell us about your business and website needs...",
+        rows: 4,
+        required: true,
       }}
-      secondaryButton={{
-        text: "Call Us",
-        href: "tel:+14800000000",
-      }}
+      buttonText="Send Message"
+      imageSrc="http://img.b2bpic.net/free-photo/focused-woman-working-with-ai-chatbot-her-desktop-computer_482257-126438.jpg?_wi=1"
       textAnimation="fade-blur"
     />
     </SectionErrorBoundary>

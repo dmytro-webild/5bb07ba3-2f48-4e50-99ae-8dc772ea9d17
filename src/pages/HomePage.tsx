@@ -26,7 +26,7 @@ export default function HomePage() {
         text: "Learn More",
         href: "#about",
       }}
-      imageSrc="http://img.b2bpic.net/free-photo/focused-woman-working-with-ai-chatbot-her-desktop-computer_482257-126438.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/focused-woman-working-with-ai-chatbot-her-desktop-computer_482257-126438.jpg?_wi=1"
       textAnimation="fade-blur"
     />
     </SectionErrorBoundary>
@@ -229,7 +229,7 @@ export default function HomePage() {
         },
       ]}
       textAnimation="fade-blur"
-      imageSrc="http://img.b2bpic.net/free-photo/focused-woman-working-with-ai-chatbot-her-desktop-computer_482257-126438.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/focused-woman-working-with-ai-chatbot-her-desktop-computer_482257-126438.jpg?_wi=2"
     />
     </SectionErrorBoundary>
   </div>
